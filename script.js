@@ -1,18 +1,12 @@
 const cvs = document.getElementById("picture");
 const canvas = document.getElementById("picture");
 const video = document.getElementById("camera");
+
 let shutterFlag = false;
-// let canvasHeight = window.innerHeight;
-// let canvasWidth = window.innerWidth;
 let CanvasHeight = document.documentElement.clientWidth * 0.95;
 let CanvasWidth = document.documentElement.clientWidth * 0.95;
-// if (window.innerWidth > window.innerHeight) {
-//   CanvasWidth = Math.floor(window.innerHeight * 0.66);
-// }
 
 function cameraOn() {
-  // video.width = CanvasWidth;
-  // video.height = CanvasHeight;
   const constraints = {
     audio: false,
     video: {
@@ -56,7 +50,6 @@ ctxTest.arc(
 ctxTest.stroke();
 
 function paintCanvas() {
-  // video.play();
   const ctx = canvas.getContext("2d");
   // 演出的な目的で一度映像を止めてSEを再生する
   // video.pause(); // 映像を停止
@@ -72,7 +65,7 @@ function paintCanvas() {
 }
 
 // シャッターボタン
-document.querySelector("#shutter").addEventListener("click", () => {
+document.getElementById("shutter").addEventListener("click", () => {
   document.getElementById("deepar-canvas").style.display = "block";
   paintCanvas();
   shutterFlag = !shutterFlag;
@@ -165,10 +158,6 @@ for (let i = 0; i < photoLinks.length; i++) {
 // document.getElementById("load-photo-1").onclick = function () {
 //   console.log("pushclick");
 //   processPhoto("./test_photos/camera1.jpg");
-// };
-// document.getElementById("load-photo-2").onclick = function () {
-//   console.log("pushclick");
-//   processPhoto("./test_photos/masashi.png");
 // };
 
 document.getElementById("remove-makeup-filter").onclick = function () {
