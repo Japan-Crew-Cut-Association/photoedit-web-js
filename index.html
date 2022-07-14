@@ -10,55 +10,68 @@
     <link rel="stylesheet" href="style.css" />
     <title>DeepAR</title>
   </head>
-  <body>
-    <h1 className="header__logo">
-      <div className="header__logo__img">YAJIMA HAIR</div>
-      <!-- <Link id="logo" to={"/"}></Link> -->
-    </h1>
-    <video id="camera"></video>
-    <canvas
-      id="deepar-canvas"
-      class="deepar"
-      oncontextmenu="event.preventDefault()"
-    ></canvas>
-    <canvas id="canvas" width="200" height="200"></canvas>
 
-    <div id="loader-wrapper">
-      <h3 class="load_img_description">
-        Load image from the left menu and apply some effects
-      </h3>
-      <span class="loader"></span>
+  <body>
+    <div id="header">
+      <header>
+        <button id="return-button">return</button>
+        <image
+          id="hedder-logo"
+          src="/test_photos/icon.png"
+          alt="icon"
+          height="60px"
+        ></image>
+      </header>
     </div>
 
-    <!-- <form>
+    <div id="view">
+      <video id="camera"></video>
+      <canvas
+        id="deepar-canvas"
+        class="deepar"
+        oncontextmenu="event.preventDefault()"
+      ></canvas>
+      <image
+        id="detail"
+        src="/test_photos/f1146_8.png"
+        alt="detailImage"
+      ></image>
+      <canvas id="canvas" width="200" height="200"></canvas>
+      <div id="loader-wrapper">
+        <span class="loader"></span>
+      </div>
+
+      <!-- <form>
       <button type="button" id="shutter">シャッター</button>
     </form> -->
-    <canvas id="picture" style="display: block"></canvas>
+      <canvas id="picture" style="display: none"></canvas>
+    </div>
+
     <div class="buttons">
       <button type="button" id="shutter">シャッター</button>
       <div class="wrap">
         <div class="control-buttons">
           <!-- <button id="load-photo-1">Load photo 1</button>
             <button id="load-photo-2">Load photo 2</button> -->
-          <button id="apply-makeup-look-1">化粧</button>
-          <button id="apply-makeup-look-2">amongs</button>
+          <button id="apply-makeup-look-1">真の姿</button>
+          <button id="apply-makeup-look-2">スタンド</button>
           <button id="apply-makeup-look-3">アノニマス</button>
           <button id="apply-makeup-look-4">ツインテール</button>
-          <button id="apply-makeup-look-5">つの</button>
+          <button id="apply-makeup-look-5">ドラゴンの角</button>
           <button id="apply-makeup-look-6">リーゼント</button>
           <button id="apply-makeup-look-7">カチューシャ</button>
           <button id="apply-makeup-look-8">チャイナ</button>
           <button id="apply-makeup-look-9">グラサン</button>
           <button id="apply-makeup-look-10">角刈り</button>
           <button id="apply-makeup-look-11">悟空</button>
-          <button id="apply-makeup-look-12">Fire</button>
+          <button id="apply-makeup-look-12">松岡修造</button>
           <button id="apply-makeup-look-13">なめくじ</button>
-          <button id="apply-makeup-look-14">老い</button>
-          <button id="apply-makeup-look-15">デビル</button>
-          <button id="apply-makeup-look-16">アンゲル</button>
+          <button id="apply-makeup-look-14">40年後の姿</button>
+          <button id="apply-makeup-look-15">小悪魔</button>
+          <button id="apply-makeup-look-16">天使</button>
           <!-- <button id="apply-makeup-look-17">meet</button> -->
-          <button id="remove-makeup-filter">Remove</button>
-          <button id="download-photo">Download</button>
+          <button id="remove-makeup-filter">削除</button>
+          <button id="download-photo">ダウンロード</button>
         </div>
       </div>
     </div>
