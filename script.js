@@ -146,7 +146,7 @@ const photoLinks = [
   "./effects/chaina",
   "./effects/eye-glass",
   "./effects/kakugari",
-  "./effects/goku3",
+  "./effects/goku2",
   "./effects/Fire_Effect",
   "./effects/Snail",
   "./effects/Stallone",

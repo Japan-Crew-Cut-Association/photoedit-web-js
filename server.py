@@ -1,15 +1,15 @@
-import SimpleHTTPServer
-import SocketServer
+import http.server
+import socketserver
 
 PORT = 3002
 
-class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
+class Handler(http.server.SimpleHTTPRequestHandler):
     pass
 
 Handler.extensions_map['.wasm'] = 'application/wasm'
 
-httpd = SocketServer.TCPServer(("", PORT), Handler)
+httpd = socketserver.TCPServer(("", PORT), Handler)
 
-print "serving at port", PORT
+print ("serving at port"), PORT
 httpd.serve_forever()
 
