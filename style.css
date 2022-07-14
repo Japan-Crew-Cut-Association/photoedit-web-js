@@ -87,6 +87,13 @@ canvas.deepar {
 .wrap {
   text-align: center;
 }
+
+#canvas {
+  position: absolute;
+  top: calc(100% / 7);
+  left: calc(100% / 4);
+}
+
 #camera {
   display: block;
   min-height: 90%;
@@ -109,4 +116,24 @@ canvas.deepar {
   margin-right: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+#picture {
+  margin: auto;
+}
+
+.header__logo__img {
+  display: block;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
+  position: relative;
+  width: 120%;
+  height: 120%;
+  background-image: url(https://user-images.githubusercontent.com/98013294/177367993-fb3fa28a-1738-46c3-b178-28285a856cb0.png);
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform-origin: center top;
 }

@@ -35,6 +35,24 @@ function cameraOn() {
 }
 cameraOn();
 
+//輪郭描画
+const canvasTest = document.getElementById("canvas");
+const ctxTest = canvasTest.getContext("2d");
+ctxTest.lineWidth = "5";
+ctxTest.strokeStyle = "red";
+const startAngle = 135;
+const endAngle = 405;
+ctxTest.beginPath();
+ctxTest.arc(
+  100,
+  100,
+  75,
+  (startAngle * Math.PI) / 180,
+  (endAngle * Math.PI) / 180,
+  false
+);
+ctxTest.stroke();
+
 function paintCanvas() {
   // video.play();
   const ctx = canvas.getContext("2d");
@@ -44,6 +62,8 @@ function paintCanvas() {
   //   video.play(); // 0.5秒後にカメラ再開
   // }, 500);
   // canvasに画像を貼り付ける
+  canvas.setAttribute("width", canvasWidth);
+  canvas.setAttribute("height", canvasHeight);
   ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
   let png = cvs.toDataURL();
   processPhoto(png);
@@ -52,6 +72,8 @@ function paintCanvas() {
 // シャッターボタン
 document.querySelector("#shutter").addEventListener("click", () => {
   document.getElementById("deepar-canvas").style.display = "block";
+  console.log(document.getElementById("deepar-canvas").width);
+  console.log(document.getElementById("picture").height);
   paintCanvas();
   shutterFlag = !shutterFlag;
   const hoge = document.getElementsByClassName("control-buttons")[0];
@@ -59,6 +81,7 @@ document.querySelector("#shutter").addEventListener("click", () => {
     document.getElementById("shutter").innerText = "再撮影";
     document.getElementById("camera").style.display = "none";
     document.getElementById("deepar-canvas").style.display = "block";
+    document.getElementById("canvas").style.display = "none";
     console.log("hoge: ", hoge);
     hoge.style.display = "block";
   } else {
@@ -66,6 +89,7 @@ document.querySelector("#shutter").addEventListener("click", () => {
     document.getElementById("shutter").innerText = "シャッター";
     document.getElementById("camera").style.display = "block";
     document.getElementById("deepar-canvas").style.display = "none";
+    document.getElementById("canvas").style.display = "block";
     // hoge.style.display = "none";
   }
 });
@@ -104,6 +128,7 @@ function processPhoto(url) {
   image.src = url;
 
   image.onload = function () {
+    console.log(image.width, image.height);
     deepAR.processImage(image);
     const loaderWrapper = document.getElementById("loader-wrapper");
     loaderWrapper.style.display = "none";
@@ -129,7 +154,7 @@ const photoLinks = [
   "./effects/angel",
   // "./effects/meet",
 ];
-console.log("1");
+
 for (let i = 0; i < photoLinks.length; i++) {
   document.getElementById(`apply-makeup-look-${i + 1}`).onclick = function () {
     deepAR.switchEffect(0, "makeup", photoLinks[i], function () {

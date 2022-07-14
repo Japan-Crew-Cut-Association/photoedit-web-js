@@ -11,12 +11,17 @@
     <title>DeepAR</title>
   </head>
   <body>
+    <h1 className="header__logo">
+      <div className="header__logo__img">YAJIMA HAIR</div>
+      <!-- <Link id="logo" to={"/"}></Link> -->
+    </h1>
     <video id="camera"></video>
     <canvas
       id="deepar-canvas"
       class="deepar"
       oncontextmenu="event.preventDefault()"
     ></canvas>
+    <canvas id="canvas" width="200" height="200"></canvas>
 
     <div id="loader-wrapper">
       <h3 class="load_img_description">
@@ -28,12 +33,7 @@
     <!-- <form>
       <button type="button" id="shutter">シャッター</button>
     </form> -->
-    <canvas
-      id="picture"
-      width="300"
-      height="200"
-      style="display: none"
-    ></canvas>
+    <canvas id="picture" style="display: block"></canvas>
     <div class="buttons">
       <button type="button" id="shutter">シャッター</button>
       <div class="wrap">
@@ -63,6 +63,10 @@
       </div>
     </div>
     <script type="text/javascript" src="lib/deepar.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.anychart.com/releases/8.11.0/js/graphics.min.js"
+    ></script>
     <script type="text/javascript" src="script.js"></script>
     <!-- <form><input type="button" value="画像返還" onclick="chgimg()" /></form> -->
   </body>
