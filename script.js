@@ -4,18 +4,20 @@ const video = document.getElementById("camera");
 let shutterFlag = false;
 // let canvasHeight = window.innerHeight;
 // let canvasWidth = window.innerWidth;
+let CanvasHeight = document.documentElement.clientWidth * 0.95;
+let CanvasWidth = document.documentElement.clientWidth * 0.95;
 // if (window.innerWidth > window.innerHeight) {
-//   canvasWidth = Math.floor(window.innerHeight * 0.66);
+//   CanvasWidth = Math.floor(window.innerHeight * 0.66);
 // }
-let canvasHeight = document.documentElement.clientWidth * 0.9;
-let canvasWidth = document.documentElement.clientWidth * 0.9;
 
 function cameraOn() {
+  // video.width = CanvasWidth;
+  // video.height = CanvasHeight;
   const constraints = {
     audio: false,
     video: {
-      width: canvasWidth,
-      height: canvasHeight,
+      width: document.documentElement.clientWidth * 0.85,
+      height: document.documentElement.clientWidth * 0.85,
       facingMode: "user", // フロントカメラを利用する
       // facingMode: { exact: "environment" }  // リアカメラを利用する場合
     },
@@ -62,9 +64,9 @@ function paintCanvas() {
   //   video.play(); // 0.5秒後にカメラ再開
   // }, 500);
   // canvasに画像を貼り付ける
-  canvas.setAttribute("width", canvasWidth);
-  canvas.setAttribute("height", canvasHeight);
-  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+  canvas.setAttribute("width", CanvasWidth);
+  canvas.setAttribute("height", CanvasHeight);
+  ctx.drawImage(video, 0, 0, CanvasWidth, CanvasHeight);
   let png = cvs.toDataURL();
   processPhoto(png);
 }
@@ -72,31 +74,30 @@ function paintCanvas() {
 // シャッターボタン
 document.querySelector("#shutter").addEventListener("click", () => {
   document.getElementById("deepar-canvas").style.display = "block";
-  console.log(document.getElementById("deepar-canvas").width);
-  console.log(document.getElementById("picture").height);
   paintCanvas();
   shutterFlag = !shutterFlag;
-  const hoge = document.getElementsByClassName("control-buttons")[0];
+  const refButton = document.getElementsByClassName("control-buttons")[0];
   if (shutterFlag) {
     document.getElementById("shutter").innerText = "再撮影";
     document.getElementById("camera").style.display = "none";
     document.getElementById("deepar-canvas").style.display = "block";
     document.getElementById("canvas").style.display = "none";
-    console.log("hoge: ", hoge);
-    hoge.style.display = "block";
+    refButton.style.display = "block";
+    document.getElementById("detail").style.display = "none";
   } else {
     console.log("else");
     document.getElementById("shutter").innerText = "シャッター";
     document.getElementById("camera").style.display = "block";
     document.getElementById("deepar-canvas").style.display = "none";
     document.getElementById("canvas").style.display = "block";
-    // hoge.style.display = "none";
+    refButton.style.display = "none";
+    document.getElementById("detail").style.display = "block";
   }
 });
 
 const deepAR = DeepAR({
-  canvasWidth: canvasWidth,
-  canvasHeight: canvasHeight,
+  canvasWidth: CanvasWidth,
+  canvasHeight: CanvasHeight,
   licenseKey:
     "7ea868436ff9abbdc43b0400090f161479b792c16fee2f59f74146fe4cc9e7d3d5321c57d4c47714",
   canvas: document.getElementById("deepar-canvas"),
@@ -128,7 +129,6 @@ function processPhoto(url) {
   image.src = url;
 
   image.onload = function () {
-    console.log(image.width, image.height);
     deepAR.processImage(image);
     const loaderWrapper = document.getElementById("loader-wrapper");
     loaderWrapper.style.display = "none";
@@ -146,7 +146,7 @@ const photoLinks = [
   "./effects/chaina",
   "./effects/eye-glass",
   "./effects/kakugari",
-  "./effects/goku2",
+  "./effects/goku3",
   "./effects/Fire_Effect",
   "./effects/Snail",
   "./effects/Stallone",
@@ -178,5 +178,14 @@ document.getElementById("remove-makeup-filter").onclick = function () {
 document.getElementById("download-photo").onclick = function () {
   deepAR.takeScreenshot();
 };
-
+document.getElementById("return-button").addEventListener("click", () => {
+  if (window.history.length >= 1) {
+    // 履歴が2個以上あれば、戻るリンクを表示
+    console.log("history");
+    history.back();
+  } else {
+    console.log("poke");
+    window.location.href = "https://www.pokemon.com/us/pokedex/";
+  }
+});
 paintCanvas();

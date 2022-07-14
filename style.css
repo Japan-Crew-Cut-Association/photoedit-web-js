@@ -63,11 +63,12 @@ canvas.deepar {
 
 .control-buttons {
   display: none;
+  height: 100%;
 }
 
 .control-buttons > button {
   height: 40px;
-  width: calc(100% / 4);
+  width: calc(120% / 4);
 }
 
 .load_img_description {
@@ -85,7 +86,9 @@ canvas.deepar {
 }
 
 .wrap {
-  text-align: center;
+  text-align-last: justify;
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
 #canvas {
@@ -94,18 +97,28 @@ canvas.deepar {
   left: calc(100% / 4);
 }
 
+#header {
+  display: flex;
+}
+
 #camera {
   display: block;
-  min-height: 90%;
-  /* min-height: 100vh; */
-  min-width: 90%;
+  /* min-height: 100%;
+  min-width: 100%; */
   margin: auto;
+  margin-top: 20px;
 }
 
 #deepar-canvas {
-  min-height: 90%;
-  min-width: 90%;
+  min-height: 80%;
+  min-width: 80%;
   margin: auto;
+  margin-top: 20px;
+}
+
+#view {
+  height: 100%;
+  width: 100%;
 }
 
 #shutter {
@@ -114,26 +127,235 @@ canvas.deepar {
   height: 60px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   margin-top: 5px;
+  background: linear-gradient(to left, #f11, #f55);
+  box-shadow: 0px 12px 0px #a00;
+  border-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom: 1px solid #f00;
+  border: none;
+  padding: 15px 80px;
+  text-decoration: none;
+  font-size: large;
+  transition: 0.3s;
+  border-color: #000;
+}
+
+#shutter:active {
+  box-shadow: 0px 0px 0px #a00;
+  transform: translateY(9px);
 }
 
 #picture {
   margin: auto;
 }
 
-.header__logo__img {
-  display: block;
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-  color: rgba(0, 0, 0, 0);
-  position: relative;
-  width: 120%;
-  height: 120%;
-  background-image: url(https://user-images.githubusercontent.com/98013294/177367993-fb3fa28a-1738-46c3-b178-28285a856cb0.png);
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  transform-origin: center top;
+#hedder-logo {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#return-button {
+  height: 60px;
+  margin-top: 3px;
+  margin-left: 3px;
+  float: left;
+  width: 75px;
+  font-size: larger;
+  font-style: italic;
+
+  background: #727171;
+  background: -webkit-linear-gradient(to right, #4180e4, #2067ec);
+  background: linear-gradient(to right, #4180e4, #2067ec);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+}
+
+#detail {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/*化粧 */
+#apply-makeup-look-1 {
+  background: #654ea3;
+  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+  background: linear-gradient(to right, #eaafc8, #654ea3);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+/* amongs */
+#apply-makeup-look-2 {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+  background: linear-gradient(to right, #a8e063, #56ab2f);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+/* anonimass */
+#apply-makeup-look-3 {
+  background: #ffefba;
+  background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
+  background: linear-gradient(to right, #ffffff, #ffefba);
+  color: #000;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+/* twinteil */
+#apply-makeup-look-4 {
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+/* tuno */
+#apply-makeup-look-5 {
+  background: #7b6d16;
+  background: -webkit-linear-gradient(to right, #80d011, #7b6d16);
+  background: linear-gradient(to right, #80d011, #7b6d16);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+/* reezent */
+#apply-makeup-look-6 {
+  background: #1f225d;
+  background: -webkit-linear-gradient(to right, #8f94fb, #1f225d);
+  background: linear-gradient(to right, #8f94fb, #1f225d);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+/* cachusha */
+#apply-makeup-look-7 {
+  background: #16b7e3;
+  background: -webkit-linear-gradient(to right, #ed8ffb, #16b7e3);
+  background: linear-gradient(to right, #ed8ffb, #16b7e3);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+/* chaina */
+#apply-makeup-look-8 {
+  background: #ec008c;
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+  background: linear-gradient(to right, #fc6767, #ec008c);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+/* glassan */
+#apply-makeup-look-9 {
+  background: #080800;
+  background: -webkit-linear-gradient(to right, #eaf60c, #080800);
+  background: linear-gradient(to right, #eaf60c, #080800);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+/* japanese kakugari */
+#apply-makeup-look-10 {
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+/* goku */
+#apply-makeup-look-11 {
+  background: #e88b11;
+  background: -webkit-linear-gradient(to right, #ede505, #e88b11);
+  background: linear-gradient(to right, #ede505, #e88b11);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+/* fire */
+#apply-makeup-look-12 {
+  background: #e42323;
+  background: -webkit-linear-gradient(to right, #ed711d, #e42323);
+  background: linear-gradient(to right, #ed711d, #e42323);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+/* snail */
+#apply-makeup-look-13 {
+  background: #a770ef;
+  background: -webkit-linear-gradient(145deg, #fdb99b, #cf8bf3, #a770ef);
+  background: linear-gradient(145deg, #fdb99b, #cf8bf3, #a770ef);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+/* ago */
+#apply-makeup-look-14 {
+  background: #212248;
+  background: -webkit-linear-gradient(to right, #cd5d5d, #212248);
+  background: linear-gradient(to right, #cd5d5d, #212248);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+/* devil */
+#apply-makeup-look-15 {
+  background: #8b0b29;
+  background: -webkit-linear-gradient(to right, #1a020d, #8b0b29);
+  background: linear-gradient(to right, #1a020d, #8b0b29);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+/* angle */
+#apply-makeup-look-16 {
+  background: #eae9c1;
+  background: -webkit-linear-gradient(to right, #eae321, #eae9c1);
+  background: linear-gradient(to right, #eae321, #eae9c1);
+  color: #000;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+#remove-makeup-filter {
+  background: #2193b0;
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+#download-photo {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-right: 8px;
 }
