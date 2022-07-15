@@ -1,7 +1,7 @@
 import http.server
 import socketserver
 
-PORT = 3003
+PORT = 3005
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     pass

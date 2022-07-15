@@ -171,8 +171,6 @@ canvas.deepar {
   font-style: italic;
 
   background: #727171;
-  background: -webkit-linear-gradient(to right, #4180e4, #2067ec);
-  background: linear-gradient(to right, #4180e4, #2067ec);
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 12px;
@@ -185,9 +183,7 @@ canvas.deepar {
 
 /*化粧 */
 #apply-makeup-look-1 {
-  background: #654ea3;
-  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
-  background: linear-gradient(to right, #eaafc8, #654ea3);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -196,18 +192,14 @@ canvas.deepar {
 }
 /* amongs */
 #apply-makeup-look-2 {
-  background: #56ab2f;
-  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
-  background: linear-gradient(to right, #a8e063, #56ab2f);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
 }
 /* anonimass */
 #apply-makeup-look-3 {
-  background: #ffefba;
-  background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
-  background: linear-gradient(to right, #ffffff, #ffefba);
+  background: #212529;
   color: #000;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -215,9 +207,7 @@ canvas.deepar {
 }
 /* twinteil */
 #apply-makeup-look-4 {
-  background: #fc4a1a;
-  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
-  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -226,18 +216,14 @@ canvas.deepar {
 }
 /* tuno */
 #apply-makeup-look-5 {
-  background: #7b6d16;
-  background: -webkit-linear-gradient(to right, #80d011, #7b6d16);
-  background: linear-gradient(to right, #80d011, #7b6d16);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
 }
 /* reezent */
 #apply-makeup-look-6 {
-  background: #1f225d;
-  background: -webkit-linear-gradient(to right, #8f94fb, #1f225d);
-  background: linear-gradient(to right, #8f94fb, #1f225d);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -245,9 +231,7 @@ canvas.deepar {
 }
 /* cachusha */
 #apply-makeup-look-7 {
-  background: #16b7e3;
-  background: -webkit-linear-gradient(to right, #ed8ffb, #16b7e3);
-  background: linear-gradient(to right, #ed8ffb, #16b7e3);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -256,18 +240,14 @@ canvas.deepar {
 }
 /* chaina */
 #apply-makeup-look-8 {
-  background: #ec008c;
-  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
-  background: linear-gradient(to right, #fc6767, #ec008c);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
 }
 /* glassan */
 #apply-makeup-look-9 {
-  background: #080800;
-  background: -webkit-linear-gradient(to right, #eaf60c, #080800);
-  background: linear-gradient(to right, #eaf60c, #080800);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -275,9 +255,7 @@ canvas.deepar {
 }
 /* japanese kakugari */
 #apply-makeup-look-10 {
-  background: #141e30;
-  background: -webkit-linear-gradient(to right, #243b55, #141e30);
-  background: linear-gradient(to right, #243b55, #141e30);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -286,18 +264,14 @@ canvas.deepar {
 }
 /* goku */
 #apply-makeup-look-11 {
-  background: #e88b11;
-  background: -webkit-linear-gradient(to right, #ede505, #e88b11);
-  background: linear-gradient(to right, #ede505, #e88b11);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
 }
 /* fire */
 #apply-makeup-look-12 {
-  background: #e42323;
-  background: -webkit-linear-gradient(to right, #ed711d, #e42323);
-  background: linear-gradient(to right, #ed711d, #e42323);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -305,9 +279,7 @@ canvas.deepar {
 }
 /* snail */
 #apply-makeup-look-13 {
-  background: #a770ef;
-  background: -webkit-linear-gradient(145deg, #fdb99b, #cf8bf3, #a770ef);
-  background: linear-gradient(145deg, #fdb99b, #cf8bf3, #a770ef);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -316,18 +288,14 @@ canvas.deepar {
 }
 /* ago */
 #apply-makeup-look-14 {
-  background: #212248;
-  background: -webkit-linear-gradient(to right, #cd5d5d, #212248);
-  background: linear-gradient(to right, #cd5d5d, #212248);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
 }
 /* devil */
 #apply-makeup-look-15 {
-  background: #8b0b29;
-  background: -webkit-linear-gradient(to right, #1a020d, #8b0b29);
-  background: linear-gradient(to right, #1a020d, #8b0b29);
+  background: #212529;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -335,9 +303,7 @@ canvas.deepar {
 }
 /* angle */
 #apply-makeup-look-16 {
-  background: #eae9c1;
-  background: -webkit-linear-gradient(to right, #eae321, #eae9c1);
-  background: linear-gradient(to right, #eae321, #eae9c1);
+  background: #212529;
   color: #000;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -346,16 +312,12 @@ canvas.deepar {
 }
 #remove-makeup-filter {
   background: #2193b0;
-  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
 }
 #download-photo {
   background: #4e54c8;
-  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
-  background: linear-gradient(to right, #8f94fb, #4e54c8);
   color: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -527,8 +489,6 @@ canvas.deepar {
     font-style: italic;
 
     background: #727171;
-    background: -webkit-linear-gradient(to right, #4180e4, #2067ec);
-    background: linear-gradient(to right, #4180e4, #2067ec);
     color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 12px;
@@ -542,9 +502,7 @@ canvas.deepar {
 
   /*化粧 */
   #apply-makeup-look-1 {
-    background: #654ea3;
-    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
-    background: linear-gradient(to right, #eaafc8, #654ea3);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -553,28 +511,22 @@ canvas.deepar {
   }
   /* amongs */
   #apply-makeup-look-2 {
-    background: #56ab2f;
-    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
-    background: linear-gradient(to right, #a8e063, #56ab2f);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
   }
   /* anonimass */
   #apply-makeup-look-3 {
-    background: #ffefba;
-    background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
-    background: linear-gradient(to right, #ffffff, #ffefba);
-    color: #000;
+    background: #212529;
+    color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
     margin-right: 8px;
   }
   /* twinteil */
   #apply-makeup-look-4 {
-    background: #fc4a1a;
-    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
-    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -583,18 +535,14 @@ canvas.deepar {
   }
   /* tuno */
   #apply-makeup-look-5 {
-    background: #7b6d16;
-    background: -webkit-linear-gradient(to right, #80d011, #7b6d16);
-    background: linear-gradient(to right, #80d011, #7b6d16);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
   }
   /* reezent */
   #apply-makeup-look-6 {
-    background: #1f225d;
-    background: -webkit-linear-gradient(to right, #8f94fb, #1f225d);
-    background: linear-gradient(to right, #8f94fb, #1f225d);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -602,9 +550,7 @@ canvas.deepar {
   }
   /* cachusha */
   #apply-makeup-look-7 {
-    background: #16b7e3;
-    background: -webkit-linear-gradient(to right, #ed8ffb, #16b7e3);
-    background: linear-gradient(to right, #ed8ffb, #16b7e3);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -613,18 +559,14 @@ canvas.deepar {
   }
   /* chaina */
   #apply-makeup-look-8 {
-    background: #ec008c;
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
-    background: linear-gradient(to right, #fc6767, #ec008c);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
   }
   /* glassan */
   #apply-makeup-look-9 {
-    background: #080800;
-    background: -webkit-linear-gradient(to right, #eaf60c, #080800);
-    background: linear-gradient(to right, #eaf60c, #080800);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -632,9 +574,7 @@ canvas.deepar {
   }
   /* japanese kakugari */
   #apply-makeup-look-10 {
-    background: #141e30;
-    background: -webkit-linear-gradient(to right, #243b55, #141e30);
-    background: linear-gradient(to right, #243b55, #141e30);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -643,18 +583,14 @@ canvas.deepar {
   }
   /* goku */
   #apply-makeup-look-11 {
-    background: #e88b11;
-    background: -webkit-linear-gradient(to right, #ede505, #e88b11);
-    background: linear-gradient(to right, #ede505, #e88b11);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
   }
   /* fire */
   #apply-makeup-look-12 {
-    background: #e42323;
-    background: -webkit-linear-gradient(to right, #ed711d, #e42323);
-    background: linear-gradient(to right, #ed711d, #e42323);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -662,9 +598,7 @@ canvas.deepar {
   }
   /* snail */
   #apply-makeup-look-13 {
-    background: #a770ef;
-    background: -webkit-linear-gradient(145deg, #fdb99b, #cf8bf3, #a770ef);
-    background: linear-gradient(145deg, #fdb99b, #cf8bf3, #a770ef);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -673,18 +607,14 @@ canvas.deepar {
   }
   /* ago */
   #apply-makeup-look-14 {
-    background: #212248;
-    background: -webkit-linear-gradient(to right, #cd5d5d, #212248);
-    background: linear-gradient(to right, #cd5d5d, #212248);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
   }
   /* devil */
   #apply-makeup-look-15 {
-    background: #8b0b29;
-    background: -webkit-linear-gradient(to right, #1a020d, #8b0b29);
-    background: linear-gradient(to right, #1a020d, #8b0b29);
+    background: #212529;
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
@@ -692,10 +622,8 @@ canvas.deepar {
   }
   /* angle */
   #apply-makeup-look-16 {
-    background: #eae9c1;
-    background: -webkit-linear-gradient(to right, #eae321, #eae9c1);
-    background: linear-gradient(to right, #eae321, #eae9c1);
-    color: #000;
+    background: #212529;
+    color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
     margin-bottom: 8px;
@@ -703,16 +631,12 @@ canvas.deepar {
   }
   #remove-makeup-filter {
     background: #2193b0;
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
   }
   #download-photo {
     background: #4e54c8;
-    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
-    background: linear-gradient(to right, #8f94fb, #4e54c8);
     color: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
