@@ -4,6 +4,7 @@ body {
   background-color: #727171;
   font-family: Helvetica, Arial, ヒラギノ角ゴ Pro, Hiragino Kaku Gothic Pro,
     YuGothic, 游ゴシック体, メイリオ, Meiryo, sans-serif;
+  -webkit-appearance: none;
 }
 
 canvas.deepar {
@@ -92,7 +93,6 @@ canvas.deepar {
   font-family: Helvetica, Arial, ヒラギノ角ゴ Pro, Hiragino Kaku Gothic Pro,
     YuGothic, 游ゴシック体, メイリオ, Meiryo, sans-serif;
   text-align-last: center;
-  -webkit-appearance: none;
 }
 
 #canvas {
