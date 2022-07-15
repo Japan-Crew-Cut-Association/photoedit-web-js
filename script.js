@@ -10,8 +10,8 @@ function cameraOn() {
   const constraints = {
     audio: false,
     video: {
-      width: document.documentElement.clientWidth * 0.85,
-      height: document.documentElement.clientWidth * 0.85,
+      //   width: document.documentElement.clientWidth * 0.85,
+      //   height: document.documentElement.clientWidth * 0.85,
       facingMode: "user", // フロントカメラを利用する
       // facingMode: { exact: "environment" }  // リアカメラを利用する場合
     },
@@ -42,7 +42,7 @@ ctxTest.beginPath();
 ctxTest.arc(
   100,
   100,
-  75,
+  50,
   (startAngle * Math.PI) / 180,
   (endAngle * Math.PI) / 180,
   false
@@ -57,9 +57,9 @@ function paintCanvas() {
   //   video.play(); // 0.5秒後にカメラ再開
   // }, 500);
   // canvasに画像を貼り付ける
-  canvas.setAttribute("width", CanvasWidth);
-  canvas.setAttribute("height", CanvasHeight);
-  ctx.drawImage(video, 0, 0, CanvasWidth, CanvasHeight);
+  // canvas.setAttribute("width", CanvasWidth);
+  // canvas.setAttribute("height", CanvasHeight);
+  ctx.drawImage(video, 0, 0);
   let png = cvs.toDataURL();
   processPhoto(png);
 }
