@@ -88,11 +88,12 @@ canvas.deepar {
 }
 
 .wrap {
-  text-align-last: justify;
-  text-align: justify;
+  /* text-align-last: justify; */
+  /* text-align: justify; */
   font-family: Helvetica, Arial, ヒラギノ角ゴ Pro, Hiragino Kaku Gothic Pro,
     YuGothic, 游ゴシック体, メイリオ, Meiryo, sans-serif;
   /* text-align-last: center; */
+  text-align: -webkit-center;
 }
 
 #canvas {
