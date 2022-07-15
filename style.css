@@ -92,7 +92,7 @@ canvas.deepar {
   text-align: justify;
   font-family: Helvetica, Arial, ヒラギノ角ゴ Pro, Hiragino Kaku Gothic Pro,
     YuGothic, 游ゴシック体, メイリオ, Meiryo, sans-serif;
-  text-align-last: center;
+  /* text-align-last: center; */
 }
 
 #canvas {
@@ -253,6 +253,7 @@ canvas.deepar {
   color: #fff;
   border-radius: 5px;
   border: 1px solid #eee;
+  margin-left: 8px;
 }
 #download-photo {
   background: #212529;
@@ -509,6 +510,7 @@ canvas.deepar {
     color: #fff;
     border-radius: 5px;
     border: 1px solid #eee;
+    margin-left: 8px;
   }
   #download-photo {
     background: #212529;
