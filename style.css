@@ -261,6 +261,7 @@ canvas.deepar {
   color: #fff;
   border-radius: 5px;
   border: 1px solid #eee;
+  margin: auto;
 }
 #download-photo {
   background: #212529;
@@ -525,7 +526,9 @@ canvas.deepar {
     color: #fff;
     border-radius: 5px;
     border: 1px solid #eee;
+    margin: auto;
   }
+
   #download-photo {
     background: #212529;
     color: #fff;
