@@ -240,7 +240,7 @@ canvas.deepar {
   border: 1px solid #eee;
   border-radius: 5px;
 }
-/* 40ago */
+/* ram */
 #apply-makeup-look-9 {
   background: #3e3f41c6;
   color: #fff;
@@ -248,12 +248,19 @@ canvas.deepar {
   border-radius: 5px;
   margin-right: 8px;
 }
+/* 40ago */
+#apply-makeup-look-10 {
+  background: #4f5862;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-left: 8px;
+}
 #remove-makeup-filter {
   background: #727171;
   color: #fff;
   border-radius: 5px;
   border: 1px solid #eee;
-  margin-left: 8px;
 }
 #download-photo {
   background: #212529;
@@ -496,7 +503,7 @@ canvas.deepar {
     border: 1px solid #eee;
     border-radius: 5px;
   }
-  /* 40ago */
+  /* ram */
   #apply-makeup-look-9 {
     background: #3e3f41c6;
     color: #fff;
@@ -504,13 +511,20 @@ canvas.deepar {
     border-radius: 5px;
     margin-right: 8px;
   }
+  /* 40ago */
+  #apply-makeup-look-10 {
+    background: #4f5862;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-left: 8px;
+  }
 
   #remove-makeup-filter {
     background: #727171;
     color: #fff;
     border-radius: 5px;
     border: 1px solid #eee;
-    margin-left: 8px;
   }
   #download-photo {
     background: #212529;

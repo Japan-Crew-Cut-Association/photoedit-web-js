@@ -133,6 +133,7 @@ const photoLinks = [
   "./effects/eye-glass",
   "./effects/kakugari5",
   "./effects/goku11",
+  "./effects/ram",
   "./effects/Stallone",
 ];
 
