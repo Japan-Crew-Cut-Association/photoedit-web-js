@@ -48,7 +48,7 @@ ctxTest.beginPath();
 ctxTest.arc(
   100,
   100,
-  75,
+  50,
   (startAngle * Math.PI) / 180,
   (endAngle * Math.PI) / 180,
   false
