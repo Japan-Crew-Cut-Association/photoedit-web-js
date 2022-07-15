@@ -2,27 +2,19 @@ const cvs = document.getElementById("picture");
 const canvas = document.getElementById("picture");
 const video = document.getElementById("camera");
 let shutterFlag = false;
-// let canvasHeight = window.innerHeight;
-// let canvasWidth = window.innerWidth;
 let CanvasHeight = document.documentElement.clientWidth * 0.95;
 let CanvasWidth = document.documentElement.clientWidth * 0.95;
-// if (window.innerWidth > window.innerHeight) {
-//   CanvasWidth = Math.floor(window.innerHeight * 0.66);
-// }
 
 function cameraOn() {
   video.setAttribute("autoplay", "");
   video.setAttribute("muted", "");
   video.setAttribute("playsinline", "");
-  // video.width = CanvasWidth;
-  // video.height = CanvasHeight;
   const constraints = {
     audio: false,
     video: {
       width: document.documentElement.clientWidth * 0.85,
       height: document.documentElement.clientWidth * 0.85,
-      facingMode: "user", // フロントカメラを利用する
-      // facingMode: { exact: "environment" }  // リアカメラを利用する場合
+      facingMode: "user",
     },
   };
   // カメラを<video>と同期
@@ -51,7 +43,7 @@ ctxTest.beginPath();
 ctxTest.arc(
   100,
   100,
-  50,
+  75,
   (startAngle * Math.PI) / 180,
   (endAngle * Math.PI) / 180,
   false
@@ -59,13 +51,7 @@ ctxTest.arc(
 ctxTest.stroke();
 
 function paintCanvas() {
-  // video.play();
   const ctx = canvas.getContext("2d");
-  // 演出的な目的で一度映像を止めてSEを再生する
-  // video.pause(); // 映像を停止
-  // setTimeout(() => {
-  //   video.play(); // 0.5秒後にカメラ再開
-  // }, 500);
   // canvasに画像を貼り付ける
   canvas.setAttribute("width", CanvasWidth);
   canvas.setAttribute("height", CanvasHeight);
@@ -89,7 +75,7 @@ document.querySelector("#shutter").addEventListener("click", () => {
     document.getElementById("detail").style.display = "none";
   } else {
     console.log("else");
-    document.getElementById("shutter").innerText = "シャッター";
+    document.getElementById("shutter").innerText = "撮影";
     document.getElementById("camera").style.display = "block";
     document.getElementById("deepar-canvas").style.display = "none";
     document.getElementById("canvas").style.display = "block";
@@ -140,22 +126,14 @@ function processPhoto(url) {
 
 const photoLinks = [
   "./effects/look1",
-  "./effects/amongs",
   "./effects/Vendetta_Mask",
   "./effects/doragonhair1",
-  "./effects/doragonhair3",
   "./effects/hair2",
-  "./effects/ram",
   "./effects/chaina",
   "./effects/eye-glass",
-  "./effects/kakugari",
-  "./effects/goku3",
-  "./effects/Fire_Effect",
-  "./effects/Snail",
+  "./effects/kakugari5",
+  "./effects/goku11",
   "./effects/Stallone",
-  "./effects/Devil",
-  "./effects/angel",
-  // "./effects/meet",
 ];
 
 for (let i = 0; i < photoLinks.length; i++) {
@@ -165,14 +143,6 @@ for (let i = 0; i < photoLinks.length; i++) {
     });
   };
 }
-// document.getElementById("load-photo-1").onclick = function () {
-//   console.log("pushclick");
-//   processPhoto("./test_photos/camera1.jpg");
-// };
-// document.getElementById("load-photo-2").onclick = function () {
-//   console.log("pushclick");
-//   processPhoto("./test_photos/masashi.png");
-// };
 
 document.getElementById("remove-makeup-filter").onclick = function () {
   deepAR.clearEffect("makeup");
