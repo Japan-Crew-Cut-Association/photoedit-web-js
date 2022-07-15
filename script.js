@@ -7,6 +7,11 @@ let CanvasHeight = document.documentElement.clientWidth * 0.95;
 let CanvasWidth = document.documentElement.clientWidth * 0.95;
 
 function cameraOn() {
+  video.setAttribute("autoplay", "");
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
+  // video.width = CanvasWidth;
+  // video.height = CanvasHeight;
   const constraints = {
     audio: false,
     video: {
